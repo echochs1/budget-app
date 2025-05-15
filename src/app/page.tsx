@@ -1,6 +1,6 @@
-import { ShadChart } from "./modules/ShadChart";
-import { AccountsAccordion } from "./modules/AccountsAccordion";
-import { TransactionsTable } from "./modules/TransactionsTable";
+import { ShadChart } from "../components/ShadChart";
+import { AccountsAccordion } from "../components/AccountsAccordion";
+import { TransactionsTable } from "../components/TransactionsTable";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] m-10">
@@ -18,10 +18,6 @@ export default function Home() {
         <div className="flex gap-6">
           <div className="w-200 h-100">
             <TransactionsTable/>
-          </div>
-          <div className="w-100 h-100">
-            <h2 className="font-semibold">Accounts</h2>
-            <AccountsAccordion/>
           </div>
         </div>
       </main>
